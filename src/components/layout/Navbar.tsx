@@ -37,14 +37,14 @@ export default function Navbar() {
               <div className={styles.avatarWrapper}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img 
-                  src="https://i.pravatar.cc/150?img=47" 
-                  alt="Lauren Bennett"
+                  src="/images/avatar_focus.png" 
+                  alt="Equipe Focus"
                   className={styles.avatarImage}
                 />
                 <span className={styles.statusBadge} />
               </div>
               <div className={styles.profileInfo}>
-                <span className={styles.profileName}>Lauren Bennett</span>
+                <span className={styles.profileName}>Equipe Focus</span>
                 <span className={styles.profileStatus}>Disponível agora</span>
               </div>
             </div>

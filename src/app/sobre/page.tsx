@@ -22,6 +22,7 @@ const milestones = [
   { year: "Hoje", title: "Foco total em cloud", desc: "Azure, AWS e Oracle Cloud: migração, multi-cloud, Kubernetes, segurança e otimização de custos." },
 ];
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars -- seção Time desativada, dados mantidos pra reativar
 const team = [
   { name: "Marco Ribeiro", role: "CEO & Fundador", specialty: "Estratégia Cloud", initials: "MR", color: "#054579" },
   { name: "Ana Costa", role: "Arquiteta Cloud", specialty: "Azure & Multi-cloud", initials: "AC", color: "#2a78b5" },
@@ -109,27 +110,7 @@ export default function SobrePage() {
           </div>
         </section>
 
-        {/* Team */}
-        <section className={`${styles.section} ${styles.sectionGray}`}>
-          <div className="container">
-            <div className={styles.sectionHeader}>
-              <span className={styles.label}>Time</span>
-              <h2>As pessoas por trás da Focus Network</h2>
-            </div>
-            <div className={styles.teamGrid}>
-              {team.map((member) => (
-                <div key={member.name} className={styles.teamCard}>
-                  <div className={styles.teamAvatar} style={{ background: `linear-gradient(135deg, ${member.color}, ${member.color}99)` }}>
-                    {member.initials}
-                  </div>
-                  <h4>{member.name}</h4>
-                  <span className={styles.teamRole}>{member.role}</span>
-                  <span className={styles.teamSpecialty}>{member.specialty}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* Team: desativado a pedido do Robson (07/10) até ter a equipe real */}
 
         <ContactSection />
       </main>
