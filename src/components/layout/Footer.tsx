@@ -1,19 +1,12 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
+import { servicos } from "@/data/servicos";
 
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Sobre", href: "/sobre" },
   { label: "Soluções", href: "/solucoes" },
   { label: "Contato", href: "/contato" },
-];
-
-const services = [
-  "Microsoft Azure",
-  "AWS",
-  "Oracle Cloud",
-  "Migração e Multi-cloud",
-  "Kubernetes & Containers",
 ];
 
 export default function Footer() {
@@ -57,8 +50,8 @@ export default function Footer() {
           <div className={styles.footerCol}>
             <h4>Serviços</h4>
             <ul>
-              {services.map((s) => (
-                <li key={s}><a href="/solucoes">{s}</a></li>
+              {servicos.map((s) => (
+                <li key={s.slug}><Link href={`/solucoes/${s.slug}`}>{s.nome}</Link></li>
               ))}
             </ul>
           </div>
