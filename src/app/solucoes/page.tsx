@@ -10,7 +10,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Nossas Soluções | Focus Network",
   description:
-    "Cybervision, Multi-cloud, Observabilidade, NOC 24/7, Bitdefender e Fortinet: as soluções da Focus Network para a infraestrutura da sua empresa, do local à nuvem.",
+    "CyberVision, Multi-cloud, Observabilidade, NOC 24/7, Bitdefender e Fortinet: as soluções da Focus Network para a infraestrutura da sua empresa, do local à nuvem.",
 };
 
 export default function SolucoesPage() {
